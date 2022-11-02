@@ -14,7 +14,7 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
     @Column(name = "first_name")
-	private String firstNmae;
+	private String firstName;
     @Column(name = "last_name")
 	private String lastName;
     @Column(name = "email_id")
@@ -28,7 +28,7 @@ public class Employee {
 	}
 	public Employee(String firstNmae, String lastName, String emailId) {
 		super();
-		this.firstNmae = firstNmae;
+		this.firstName = firstName;
 		this.lastName = lastName;
 		this.emailId = emailId;
 	}
@@ -38,11 +38,11 @@ public class Employee {
 	public void setId(long id) {
 		this.id = id;
 	}
-	public String getFirstNmae() {
-		return firstNmae;
+	public String getFirstName() {
+		return firstName;
 	}
-	public void setFirstNmae(String firstNmae) {
-		this.firstNmae = firstNmae;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
 	public String getLastName() {
 		return lastName;
